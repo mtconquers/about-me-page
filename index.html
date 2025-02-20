@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Me</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+    <nav>
+        <h2>Chris Coulanges Profile</h2>
+        <button id="darkModeButton">Dark Mode</button>
+    </nav>
+    
+    <div class="container">
+        <h1>About Me</h1>
+        <p>This is the About Me page.</p>
+    
+        <img class="profile" src="images/profile.png" alt="My Profile Picture" width="200">
+    
+        <button id="changeTextButton">Click Here</button>
+    </div>
+
+    <div class="skills">
+     <h2>My Skills</h2>
+     <div class ="skills-container">
+        <div class="skill html"><img src="icons/html.png" alt="HTML">HTML</div>
+        <div class="skill css"><img src="icons/css.png" alt="CSS">CSS</div>
+        <div class="skill js"><img src="icons/javascript.png" alt="JS"></icons>JavaScript</div>
+        <div class="skill react"><img src="icons/react.png" alt="React"></icons>React</div>
+     </div>
+    </div>
+
+    <div class="user-input">
+        <h2>Leave a comment</h2>
+        <input type="text" id="userComment" placeholder="Write a comment...">
+        <button id="submitComment">Submit</button>
+        <div id ="commentSection"></div>
+    </div>
+    <div id="messageBox"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>

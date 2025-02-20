@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+h1 {
+    color:black;
+}
+button {
+    background-color: blue;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-size: 16px;
+    border-radius: 8px;
+}
+button:hover {
+    background-color: darkblue;
+}
+
+button:active {
+    transform:scale(0.95); /* Adds a click effect */
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+}
+
+img {
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+    transform: scale(1.1);
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.profile {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+}
+.skills {
+    margin-top: 40px;
+    text-align: center;
+}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.skill {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.3s;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content:center;
+    min-width: 120px;
+}
+.skill:hover {
+    transform: scale(1.1);
+    background: darkblue;
+    opacity: 0.9;
+}
+.skill img {
+    width: 38px;
+    height: auto;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.skill.html {
+    background: #e44d26;
+}
+.skill.css {
+    background: #1572b6;
+}
+.skill.js {
+    background: #f7df1e;
+    color:black;
+}
+.skill.react {
+    background: #61dafb;
+    color: black;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+}
+nav h2 {
+    margin: 0;
+}
+nav button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+nav button:hover {
+    background: lightgray;
+}
+.dark-mode {
+    background-color: darkgray;
+    color: white;
+}
+#messageBox {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.success {
+    background-color: #4caf50;
+    color: white;
+}
+.error {
+    background-color: #FF5733;
+    color: white;
+}
+.comment-container {
+    background-color: #f4f4f4; /* Light gray background */
+    color: black; /* Ensure text is visible */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.comment-container p {
+    margin: 0;
+    padding: 5px;
+    flex-grow: 1;
+}
+.comment-container button {
+    margin-left: 10px;
+    background-color: #e44d26;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+.comment-container button:hover {
+    background-color: #c0392b;
+}
+
+/* Default Styles (for desktops) */
+
+/* Tablet View (Max Width: 768px */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack skills vertically*/
+        align-items: center;
+    }
+
+    button {
+        width: 100%; /* Make buttons full width */
+    }
+}
+
+/* Mobile View (Max Width: 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px; /* Smaller text */
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack elements */
+    }
+
+    input, button {
+        width: 100%; /* Full width inputs and buttons */
+    }
+}
